@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/result_list_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/result_list_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Tags: blossom, bloom, flower"
+        app:layout_constraintLeft_toRightOf="@+id/result_list_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/result_list_views"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+    />
+
+    <TextView
+        android:id="@+id/result_list_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="views: 7671"
+        app:layout_constraintLeft_toRightOf="@+id/result_list_photo"
+        app:layout_constraintTop_toBottomOf="@+id/result_list_tag"
+        app:layout_constraintBottom_toTopOf="@+id/result_list_downloads"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:layout_marginStart="8dp"
+    />
+
+    <TextView
+        android:id="@+id/result_list_downloads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="downloads: 6439"
+        app:layout_constraintLeft_toRightOf="@+id/result_list_photo"
+        app:layout_constraintTop_toBottomOf="@+id/result_list_views"
+        app:layout_constraintBottom_toTopOf="@+id/result_list_favorites"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:layout_marginStart="8dp"
+    />
+
+    <TextView
+        android:id="@+id/result_list_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="favorites: 1"
+        app:layout_constraintLeft_toRightOf="@+id/result_list_photo"
+        app:layout_constraintTop_toBottomOf="@+id/result_list_downloads"
+        app:layout_constraintBottom_toTopOf="@+id/result_list_likes"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:layout_marginStart="8dp"
+    />
+
+    <TextView
+        android:id="@+id/result_list_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="likes: 5"
+        app:layout_constraintLeft_toRightOf="@+id/result_list_photo"
+        app:layout_constraintTop_toBottomOf="@+id/result_list_favorites"
+        app:layout_constraintBottom_toTopOf="@+id/result_list_comments"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:layout_marginStart="8dp"
+    />
+
+    <TextView
+        android:id="@+id/result_list_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="comments: 2"
+        app:layout_constraintLeft_toRightOf="@+id/result_list_photo"
+        app:layout_constraintTop_toBottomOf="@+id/result_list_likes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:layout_marginStart="8dp"
+    />
+</android.support.constraint.ConstraintLayout>
